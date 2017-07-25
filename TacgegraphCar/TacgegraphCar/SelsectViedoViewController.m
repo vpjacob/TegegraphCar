@@ -8,9 +8,12 @@
 
 #import "SelsectViedoViewController.h"
 #import <QPSDK/QPSDK.h>
-@interface SelsectViedoViewController ()
-    
-    @end
+
+@interface SelsectViedoViewController (){
+    BOOL _down;
+}
+
+@end
 
 @implementation SelsectViedoViewController
     
@@ -39,10 +42,26 @@
         }
     }
     
-//    - (NSArray *)qupaiSDKMusics:(id<QupaiSDKDelegate>)sdk
-//    {
-//        
-//    }
+- (NSArray *)qupaiSDKMusics:(id<QupaiSDKDelegate>)sdk
+    {
+        NSString *baseDir = [[NSBundle mainBundle] bundlePath];
+        NSString *configPath = [[NSBundle mainBundle] pathForResource:_down ? @"music2" : @"music1" ofType:@"json"];
+        NSData *configData = [NSData dataWithContentsOfFile:configPath];
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:configData options:NSJSONReadingAllowFragments error:nil];
+        NSArray *items = dic[@"music"];
+        
+        NSMutableArray *array = [NSMutableArray array];
+        for (NSDictionary *item in items) {
+            NSString *path = [baseDir stringByAppendingPathComponent:item[@"resourceUrl"]];
+            QPEffectMusic *effect = [[QPEffectMusic alloc] init];
+            effect.name = item[@"name"];
+            effect.eid = [item[@"id"] intValue];
+            effect.musicName = [path stringByAppendingPathComponent:@"audio.mp3"];
+            effect.icon = [path stringByAppendingPathComponent:@"icon.png"];
+            [array addObject:effect];
+        }
+        return array;
+    }
     
 - (IBAction)RecBtnClick:(id)sender {
     QupaiSDK *sdk = [QupaiSDK shared];

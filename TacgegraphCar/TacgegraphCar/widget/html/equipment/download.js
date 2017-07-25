@@ -19,6 +19,9 @@ apiready = function() {
 		sync : true,
 		key : 'path'
 	});
+    
+
+    
 	var header = $api.byId('header');
 	ssid = api.pageParam.ssid;
 	if (api.systemType == 'ios') {
@@ -288,30 +291,79 @@ function download(name) {
 	////$(aaa).remove();
 	//$(aaa2).remove();
 	var url = "http://192.168.1.254/CARDV/MOVIE/" + name;
-	api.showProgress({
-		style : 'default',
-		animationType : 'fade',
-		title : '下载中...',
-		text : '正在努力下载，请稍后...',
-		modal : false
-	});
-	api.download({
-		url : url,
-		savePath : path_file + name,
-		report : true,
-		cache : true,
-		allowResume : true
-	}, function(ret, err) {
-		console.log(JSON.stringify(ret));
-		if (ret.state == 1) {
-			state = 1;
-			api.alert({
-				msg : "下载成功"
-			});
-			$(idOfI).remove();
-			api.hideProgress();
-		} else {
-			state = 0;
-		}
-	});
+    
+    var fs = api.require('fs');
+    fs.exist({
+             path:path_file+name
+             }, function(ret, err) {
+             if (ret.exist) {
+             if (ret.directory) {
+             alert('是文件夹');
+             } else {
+             
+             api.accessNative({
+                              name : 'palyCarViedo',
+                              extra : {
+                              path:path_file+name,
+                              name:name
+                              }
+                              }, function(ret, err) {
+                              if (ret) {
+                              //                                    alert(JSON.stringify(ret));
+                              } else {
+                              //                                    alert(JSON.stringify(err));
+                              }
+                              });
+             $(idOfI).remove();
+             
+             
+             }
+             } else {
+             
+             
+             api.showProgress({
+                              style : 'default',
+                              animationType : 'fade',
+                              title : '下载中...',
+                              text : '正在努力下载，请稍后...',
+                              modal : false
+                              });
+             
+             api.download({
+                          url : url,
+                          savePath : path_file + name,
+                          report : true,
+                          cache : true,
+                          allowResume : true
+                           }, function(ret, err) {
+                          console.log(JSON.stringify(ret));
+                          if (ret.state == 1) {
+                          state = 1;
+                          api.accessNative({
+                                           name : 'palyCarViedo',
+                                           extra : {
+                                           path:path_file+name,
+                                           name:name
+                                           }
+                                           }, function(ret, err) {
+                                           if (ret) {
+                                           //                                    alert(JSON.stringify(ret));
+                                           } else {
+                                           //                                    alert(JSON.stringify(err));
+                                           }
+                                           });
+                          
+                          
+                          
+                          $(idOfI).remove();
+                          api.hideProgress();
+                          } else {
+                          state = 0;
+                          }
+                          });
+             
+             }
+             });
+    
+
 }
