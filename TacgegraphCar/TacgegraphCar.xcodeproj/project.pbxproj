@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D68E40071F272A6100FB3599 /* QPSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68E40051F272A6100FB3599 /* QPSDK.framework */; };
+		D68E40081F272A6100FB3599 /* QPSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D68E40061F272A6100FB3599 /* QPSDK.bundle */; };
+		D68E400C1F272AAC00FB3599 /* SelsectViedoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68E400A1F272AAC00FB3599 /* SelsectViedoViewController.m */; };
+		D68E400D1F272AAC00FB3599 /* SelsectViedoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68E400B1F272AAC00FB3599 /* SelsectViedoViewController.xib */; };
 		D693D56E1F1DF53A006939FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D693D56D1F1DF53A006939FF /* main.m */; };
 		D693D5711F1DF53B006939FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D693D5701F1DF53B006939FF /* AppDelegate.m */; };
 		D693D5771F1DF53B006939FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D693D5751F1DF53B006939FF /* Main.storyboard */; };
@@ -44,6 +48,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D68E40051F272A6100FB3599 /* QPSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QPSDK.framework; sourceTree = "<group>"; };
+		D68E40061F272A6100FB3599 /* QPSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QPSDK.bundle; sourceTree = "<group>"; };
+		D68E40091F272AAC00FB3599 /* SelsectViedoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelsectViedoViewController.h; sourceTree = "<group>"; };
+		D68E400A1F272AAC00FB3599 /* SelsectViedoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelsectViedoViewController.m; sourceTree = "<group>"; };
+		D68E400B1F272AAC00FB3599 /* SelsectViedoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelsectViedoViewController.xib; sourceTree = "<group>"; };
 		D693D5691F1DF53A006939FF /* TacgegraphCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacgegraphCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D693D56D1F1DF53A006939FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D693D56F1F1DF53B006939FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +125,7 @@
 				D693D5DA1F1DF6F7006939FF /* libbz2.tbd in Frameworks */,
 				D693D65E1F1DFE92006939FF /* libswresample.a in Frameworks */,
 				D693D65C1F1DFE92006939FF /* libopencore-amrnb.a in Frameworks */,
+				D68E40071F272A6100FB3599 /* QPSDK.framework in Frameworks */,
 				D693D6611F1DFE92006939FF /* mam.a in Frameworks */,
 				D693D5CF1F1DF5EE006939FF /* libstdc++.tbd in Frameworks */,
 				D693D6531F1DFE92006939FF /* fs.a in Frameworks */,
@@ -163,9 +173,14 @@
 				D693D5D31F1DF681006939FF /* MyNaviController.m */,
 				D693D5D41F1DF681006939FF /* ViewController.h */,
 				D693D5D51F1DF681006939FF /* ViewController.m */,
+				D68E40091F272AAC00FB3599 /* SelsectViedoViewController.h */,
+				D68E400A1F272AAC00FB3599 /* SelsectViedoViewController.m */,
+				D68E400B1F272AAC00FB3599 /* SelsectViedoViewController.xib */,
 				D693D5751F1DF53B006939FF /* Main.storyboard */,
 				D693D5781F1DF53C006939FF /* Assets.xcassets */,
 				D693D57D1F1DF53C006939FF /* Info.plist */,
+				D68E40051F272A6100FB3599 /* QPSDK.framework */,
+				D68E40061F272A6100FB3599 /* QPSDK.bundle */,
 				D693D5DF1F1DF807006939FF /* widget */,
 				D693D56C1F1DF53A006939FF /* Supporting Files */,
 			);
@@ -310,11 +325,13 @@
 			files = (
 				D693D6541F1DFE92006939FF /* kxmovie.bundle in Resources */,
 				D693D5E01F1DF807006939FF /* widget in Resources */,
+				D68E400D1F272AAC00FB3599 /* SelsectViedoViewController.xib in Resources */,
 				D693D66C1F1DFEA8006939FF /* res_mam in Resources */,
 				D693D66D1F1DFEA8006939FF /* res_movies in Resources */,
 				D693D66E1F1DFEA8006939FF /* uz in Resources */,
 				D693D5791F1DF53C006939FF /* Assets.xcassets in Resources */,
 				D693D5771F1DF53B006939FF /* Main.storyboard in Resources */,
+				D68E40081F272A6100FB3599 /* QPSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +346,7 @@
 				D693D5D71F1DF681006939FF /* MyNaviController.m in Sources */,
 				D693D56E1F1DF53A006939FF /* main.m in Sources */,
 				D693D5D61F1DF681006939FF /* JJHtmlListener.m in Sources */,
+				D68E400C1F272AAC00FB3599 /* SelsectViedoViewController.m in Sources */,
 				D693D5D81F1DF681006939FF /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +464,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = HN2F9US93L;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TacgegraphCar",
+				);
 				INFOPLIST_FILE = TacgegraphCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -466,6 +488,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = HN2F9US93L;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TacgegraphCar",
+				);
 				INFOPLIST_FILE = TacgegraphCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

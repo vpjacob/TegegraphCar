@@ -12,6 +12,7 @@
 #import "MyNaviController.h"
 #import "UZAppUtils.h"
 #import "JJHtmlListener.h"
+#import "SelsectViedoViewController.h"
 
 @interface AppDelegate ()
 
@@ -32,7 +33,7 @@
     [nav pushViewController:tabVC animated:YES];
     
     
-    UIViewController *vc = [[UIViewController alloc] init];
+    SelsectViedoViewController *vc = [[SelsectViedoViewController alloc] init];
     UIViewController *h5VC = [[JJHtmlListener manager] getAPIWidgetContainer];
     vc.tabBarItem.title = @"录制视频";
     h5VC.tabBarItem.title = @"行车记录仪";
