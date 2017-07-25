@@ -1,0 +1,26 @@
+[{
+     "name":"fs",
+     "class":"UZFileSystem",
+     "methods":["createDir","createFile","remove","copyTo","moveTo","rename","readDir","open","read","readUp","readDown","write","close","exist","getAttribute","rmdir","readByLength","writeByLength","getMD5"],
+     "syncMethods":["createDirSync","createFileSync","removeSync","copyToSync","moveToSync","renameSync","readDirSync","openSync","readSync","readUpSync","readDownSync","writeSync","closeSync","existSync","getAttributeSync","rmdirSync","readByLengthSync","writeByLengthSync","getMD5Sync"]
+ }
+,{
+    "name":"mam",
+    "class":"UZMAM",
+    "methods":["checkUpdate","addEvent","execCommand","showToastAlert","hideToastAlert"],
+    "syncMethods":["syncExecCommand"],
+    "launchClassMethod":"launch"
+}
+, {
+    "name":"movies",
+    "class":"UZModulePlayMovie",
+    "methods":["show"],
+    "syncMethods":["get"],
+    "launchClassMethod":"launch"
+ }
+,{
+"name":"trans",
+"class":"UZTrans",
+"methods":["parse","saveImage","decodeImgToBase64"]
+}
+]
