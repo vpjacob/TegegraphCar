@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4EE20C26A420FDA54C7C531A8159EE80745D815A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "86280DB336B28E815F8D4FF26753DBC8C2EB631C" : 9223372036854775807,
+    "4EE20C26A420FDA54C7C531A8159EE80745D815A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B6064A0F-4575-4AC5-BDB7-AD10A783BC68",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "86280DB336B28E815F8D4FF26753DBC8C2EB631C" : "project\/",
+    "4EE20C26A420FDA54C7C531A8159EE80745D815A" : "Tacgegraph\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TacgegraphCar",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TacgegraphCar\/TacgegraphCar.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vpjacob\/TegegraphCar.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4EE20C26A420FDA54C7C531A8159EE80745D815A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vpjacob\/oc_project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "86280DB336B28E815F8D4FF26753DBC8C2EB631C"
+    }
+  ]
+}

@@ -13,11 +13,13 @@
 #import "APIWebView.h"
 #import "APIScriptMessage.h"
 #import "APIModuleMethod.h"
+#import "KxMenu.h"
 
 static JJHtmlListener *instance = nil;
 
 @interface JJHtmlListener()<APIWebViewDelegate,APIModuleMethodDelegate,APIScriptMessageDelegate>
 @property (nonatomic, strong) APIWidgetContainer *windowContainer;
+@property(nonatomic,strong)NSString *path;
 @end
 
 @implementation JJHtmlListener
@@ -85,7 +87,10 @@ static JJHtmlListener *instance = nil;
 
 #pragma mark - APIScriptMessageDelegate---监听
 - (void)webView:(APIWebView *)webView didReceiveScriptMessage:(APIScriptMessage *)scriptMessage {
-
+    
+    if ([scriptMessage.name isEqualToString:@"showDetail"]) {
+        [self showMenu:scriptMessage.userInfo[@"path"]];
+    }
     
     //
     //    if ([scriptMessage.name isEqual:@"abc"]) {
@@ -98,6 +103,59 @@ static JJHtmlListener *instance = nil;
     //        [[APIEventCenter defaultCenter] sendEventWithName:@"fromNative" userInfo:@{@"value":@"哈哈哈，我是来自Native的事件"}];
     //    }
 }
+
+
+- (void)showMenu:(NSString *)path
+{
+    self.path = path;
+    NSArray *menuItems =
+    @[
+      
+      [KxMenuItem menuItem:@"分享"
+                     image:nil
+                    target:self
+                    action:@selector(pushMenuItem:)],
+      
+      [KxMenuItem menuItem:@"删除"
+                     image:nil
+                    target:self
+                    action:@selector(pushMenuItem:)]
+      ];
+    
+    KxMenuItem *first = menuItems[1];
+    first.foreColor = [UIColor redColor];
+//    first.alignment = NSTextAlignmentCenter;
+    
+    [KxMenu showMenuInView:self.windowContainer.view
+                  fromRect:CGRectMake(KNB_SCREEN_WIDTH * 0.7, 50, 50, 50)
+                 menuItems:menuItems];
+}
+
+- (void) pushMenuItem:(KxMenuItem *)sender
+{
+    NSLog(@"%@", sender.title);
+    
+    if ([sender.title isEqualToString:@"分享"]) {
+        
+    }else if([sender.title isEqualToString:@"删除"]){
+        //文件名
+        BOOL blHave=[[NSFileManager defaultManager] fileExistsAtPath:self.path];
+        if (!blHave) {
+            NSLog(@"no  have");
+            return ;
+        }else {
+            NSLog(@" have");
+            BOOL blDele= [[NSFileManager defaultManager] removeItemAtPath:self.path error:nil];
+            if (blDele) {
+                NSLog(@"dele success");
+            }else {
+                NSLog(@"dele fail");
+            }
+    }
+    
+}
+}
+
 
 #pragma mark - APIModuleMethodDelegate
 - (BOOL)shouldInvokeModuleMethod:(APIModuleMethod *)moduleMethod {

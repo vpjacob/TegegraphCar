@@ -8,11 +8,9 @@
 
 #import "AppDelegate.h"
 #import "APIManager.h"
-#import "ViewController.h"
-#import "MyNaviController.h"
-#import "UZAppUtils.h"
-#import "JJHtmlListener.h"
-#import "SelsectViedoViewController.h"
+
+
+
 
 @interface AppDelegate ()
 
@@ -26,21 +24,11 @@
     [[APIManager sharedManager] initSDKWithLaunchOptions:launchOptions];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UINavigationController *nav = [[UINavigationController alloc] init];
-    self.window.rootViewController = nav;
-    nav.navigationBarHidden = YES;
-    UITabBarController *tabVC = [[UITabBarController alloc] init];
-    [nav pushViewController:tabVC animated:YES];
+    self.tabBar = [[JJTabBarViewController alloc] init];
+    self.nav = [[JJNavigationController alloc] initWithRootViewController:self.tabBar];
+    self.window.rootViewController = self.nav;
+    self.nav.navigationBarHidden = YES;
     
-    
-    SelsectViedoViewController *vc = [[SelsectViedoViewController alloc] init];
-    UIViewController *h5VC = [[JJHtmlListener manager] getAPIWidgetContainer];
-    vc.tabBarItem.title = @"录制视频";
-    h5VC.tabBarItem.title = @"行车记录仪";
-    tabVC.viewControllers = @[vc,h5VC];
-    
-    
-//    self.window.rootViewController = (UIViewController *)[[JJHtmlListener manager] getAPIWidgetContainer];
     [self.window makeKeyAndVisible];
     return YES;
 }

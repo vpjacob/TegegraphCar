@@ -14,6 +14,10 @@
 		D68E400F1F273A6E00FB3599 /* music in Resources */ = {isa = PBXBuildFile; fileRef = D68E400E1F273A6D00FB3599 /* music */; };
 		D68E40121F273A7900FB3599 /* music1.json in Resources */ = {isa = PBXBuildFile; fileRef = D68E40101F273A7900FB3599 /* music1.json */; };
 		D68E40131F273A7900FB3599 /* music2.json in Resources */ = {isa = PBXBuildFile; fileRef = D68E40111F273A7900FB3599 /* music2.json */; };
+		D690D6351F2874AB004781AD /* res_movies in Resources */ = {isa = PBXBuildFile; fileRef = D690D6341F2874AB004781AD /* res_movies */; };
+		D690D6671F287FD7004781AD /* JJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D690D6601F287FD7004781AD /* JJNavigationController.m */; };
+		D690D6681F287FD7004781AD /* JJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D690D6621F287FD7004781AD /* JJTabBarViewController.m */; };
+		D690D66C1F289215004781AD /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D690D66B1F289215004781AD /* KxMenu.m */; };
 		D693D56E1F1DF53A006939FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D693D56D1F1DF53A006939FF /* main.m */; };
 		D693D5711F1DF53B006939FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D693D5701F1DF53B006939FF /* AppDelegate.m */; };
 		D693D5771F1DF53B006939FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D693D5751F1DF53B006939FF /* Main.storyboard */; };
@@ -46,11 +50,14 @@
 		D693D6611F1DFE92006939FF /* mam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D693D6471F1DFE92006939FF /* mam.a */; };
 		D693D6641F1DFE92006939FF /* trans.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D693D64C1F1DFE92006939FF /* trans.a */; };
 		D693D66C1F1DFEA8006939FF /* res_mam in Resources */ = {isa = PBXBuildFile; fileRef = D693D6691F1DFEA8006939FF /* res_mam */; };
-		D693D66D1F1DFEA8006939FF /* res_movies in Resources */ = {isa = PBXBuildFile; fileRef = D693D66A1F1DFEA8006939FF /* res_movies */; };
 		D693D66E1F1DFEA8006939FF /* uz in Resources */ = {isa = PBXBuildFile; fileRef = D693D66B1F1DFEA8006939FF /* uz */; };
+		F8EC3206A22F56C02C6F0814 /* libPods-TacgegraphCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB0E21772A96CFDEDB42698 /* libPods-TacgegraphCar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FE79E8637999C551CE90DF3 /* Pods-TacgegraphCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TacgegraphCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TacgegraphCar/Pods-TacgegraphCar.debug.xcconfig"; sourceTree = "<group>"; };
+		4C97508689EF60630DDB1983 /* Pods-TacgegraphCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TacgegraphCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-TacgegraphCar/Pods-TacgegraphCar.release.xcconfig"; sourceTree = "<group>"; };
+		ABB0E21772A96CFDEDB42698 /* libPods-TacgegraphCar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TacgegraphCar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68E40051F272A6100FB3599 /* QPSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QPSDK.framework; sourceTree = "<group>"; };
 		D68E40061F272A6100FB3599 /* QPSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QPSDK.bundle; sourceTree = "<group>"; };
 		D68E40091F272AAC00FB3599 /* SelsectViedoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelsectViedoViewController.h; sourceTree = "<group>"; };
@@ -59,6 +66,14 @@
 		D68E400E1F273A6D00FB3599 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = music; sourceTree = "<group>"; };
 		D68E40101F273A7900FB3599 /* music1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music1.json; sourceTree = "<group>"; };
 		D68E40111F273A7900FB3599 /* music2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music2.json; sourceTree = "<group>"; };
+		D690D6341F2874AB004781AD /* res_movies */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res_movies; path = "../../../../project/WisdomLife 7/WisdomLife/lib/Modules/res_movies"; sourceTree = "<group>"; };
+		D690D6361F28755B004781AD /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D690D65F1F287FD7004781AD /* JJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJNavigationController.h; sourceTree = "<group>"; };
+		D690D6601F287FD7004781AD /* JJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJNavigationController.m; sourceTree = "<group>"; };
+		D690D6611F287FD7004781AD /* JJTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTabBarViewController.h; sourceTree = "<group>"; };
+		D690D6621F287FD7004781AD /* JJTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTabBarViewController.m; sourceTree = "<group>"; };
+		D690D66A1F289215004781AD /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
+		D690D66B1F289215004781AD /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
 		D693D5691F1DF53A006939FF /* TacgegraphCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacgegraphCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D693D56D1F1DF53A006939FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D693D56F1F1DF53B006939FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,7 +126,6 @@
 		D693D6471F1DFE92006939FF /* mam.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = mam.a; sourceTree = "<group>"; };
 		D693D64C1F1DFE92006939FF /* trans.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = trans.a; sourceTree = "<group>"; };
 		D693D6691F1DFEA8006939FF /* res_mam */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res_mam; sourceTree = "<group>"; };
-		D693D66A1F1DFEA8006939FF /* res_movies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res_movies; sourceTree = "<group>"; };
 		D693D66B1F1DFEA8006939FF /* uz */ = {isa = PBXFileReference; lastKnownFileType = folder; path = uz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,18 +157,48 @@
 				D693D6561F1DFE92006939FF /* libavdevice.a in Frameworks */,
 				D693D5CB1F1DF5D8006939FF /* libz.tbd in Frameworks */,
 				D693D5C91F1DF5CB006939FF /* WebKit.framework in Frameworks */,
+				F8EC3206A22F56C02C6F0814 /* libPods-TacgegraphCar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D690D6371F2878A3004781AD /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				D690D6691F289215004781AD /* Source */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		D690D6561F287FD7004781AD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D690D65F1F287FD7004781AD /* JJNavigationController.h */,
+				D690D6601F287FD7004781AD /* JJNavigationController.m */,
+				D690D6611F287FD7004781AD /* JJTabBarViewController.h */,
+				D690D6621F287FD7004781AD /* JJTabBarViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D690D6691F289215004781AD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D690D66A1F289215004781AD /* KxMenu.h */,
+				D690D66B1F289215004781AD /* KxMenu.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		D693D5601F1DF53A006939FF = {
 			isa = PBXGroup;
 			children = (
 				D693D56B1F1DF53A006939FF /* TacgegraphCar */,
 				D693D56A1F1DF53A006939FF /* Products */,
 				D693D5C71F1DF5CA006939FF /* Frameworks */,
+				F92EB7DFD1B6BAF7577A964F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +217,8 @@
 				D693D6381F1DFE92006939FF /* Modules */,
 				D693D56F1F1DF53B006939FF /* AppDelegate.h */,
 				D693D5701F1DF53B006939FF /* AppDelegate.m */,
+				D690D6561F287FD7004781AD /* Base */,
+				D690D6371F2878A3004781AD /* Vendor */,
 				D693D5D01F1DF681006939FF /* JJHtmlListener.h */,
 				D693D5D11F1DF681006939FF /* JJHtmlListener.m */,
 				D693D5D21F1DF681006939FF /* MyNaviController.h */,
@@ -181,6 +227,7 @@
 				D693D5D51F1DF681006939FF /* ViewController.m */,
 				D68E40091F272AAC00FB3599 /* SelsectViedoViewController.h */,
 				D68E400A1F272AAC00FB3599 /* SelsectViedoViewController.m */,
+				D690D6361F28755B004781AD /* PrefixHeader.pch */,
 				D68E400B1F272AAC00FB3599 /* SelsectViedoViewController.xib */,
 				D693D5751F1DF53B006939FF /* Main.storyboard */,
 				D68E40101F273A7900FB3599 /* music1.json */,
@@ -214,6 +261,7 @@
 				D693D5CC1F1DF5E6006939FF /* libicucore.tbd */,
 				D693D5CA1F1DF5D8006939FF /* libz.tbd */,
 				D693D5C81F1DF5CB006939FF /* WebKit.framework */,
+				ABB0E21772A96CFDEDB42698 /* libPods-TacgegraphCar.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -251,8 +299,8 @@
 		D693D6381F1DFE92006939FF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D690D6341F2874AB004781AD /* res_movies */,
 				D693D6691F1DFEA8006939FF /* res_mam */,
-				D693D66A1F1DFEA8006939FF /* res_movies */,
 				D693D66B1F1DFEA8006939FF /* uz */,
 				D693D6391F1DFE92006939FF /* fs.a */,
 				D693D63A1F1DFE92006939FF /* kxmovie.bundle */,
@@ -273,6 +321,15 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		F92EB7DFD1B6BAF7577A964F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FE79E8637999C551CE90DF3 /* Pods-TacgegraphCar.debug.xcconfig */,
+				4C97508689EF60630DDB1983 /* Pods-TacgegraphCar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,9 +337,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D693D5801F1DF53C006939FF /* Build configuration list for PBXNativeTarget "TacgegraphCar" */;
 			buildPhases = (
+				21082EAD5185F6A57C1A5F96 /* [CP] Check Pods Manifest.lock */,
 				D693D5651F1DF53A006939FF /* Sources */,
 				D693D5661F1DF53A006939FF /* Frameworks */,
 				D693D5671F1DF53A006939FF /* Resources */,
+				45F0CFA70D046682C41BB2B2 /* [CP] Embed Pods Frameworks */,
+				D6F941B36B1BF32963216A7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,7 +398,7 @@
 				D68E400F1F273A6E00FB3599 /* music in Resources */,
 				D68E400D1F272AAC00FB3599 /* SelsectViedoViewController.xib in Resources */,
 				D693D66C1F1DFEA8006939FF /* res_mam in Resources */,
-				D693D66D1F1DFEA8006939FF /* res_movies in Resources */,
+				D690D6351F2874AB004781AD /* res_movies in Resources */,
 				D693D66E1F1DFEA8006939FF /* uz in Resources */,
 				D693D5791F1DF53C006939FF /* Assets.xcassets in Resources */,
 				D693D5771F1DF53B006939FF /* Main.storyboard in Resources */,
@@ -349,17 +409,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21082EAD5185F6A57C1A5F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		45F0CFA70D046682C41BB2B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TacgegraphCar/Pods-TacgegraphCar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6F941B36B1BF32963216A7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TacgegraphCar/Pods-TacgegraphCar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D693D5651F1DF53A006939FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D693D5711F1DF53B006939FF /* AppDelegate.m in Sources */,
+				D690D6671F287FD7004781AD /* JJNavigationController.m in Sources */,
 				D693D5D71F1DF681006939FF /* MyNaviController.m in Sources */,
 				D693D56E1F1DF53A006939FF /* main.m in Sources */,
+				D690D66C1F289215004781AD /* KxMenu.m in Sources */,
 				D693D5D61F1DF681006939FF /* JJHtmlListener.m in Sources */,
 				D68E400C1F272AAC00FB3599 /* SelsectViedoViewController.m in Sources */,
 				D693D5D81F1DF681006939FF /* ViewController.m in Sources */,
+				D690D6681F287FD7004781AD /* JJTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +582,7 @@
 		};
 		D693D5811F1DF53C006939FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE79E8637999C551CE90DF3 /* Pods-TacgegraphCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -480,6 +592,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TacgegraphCar",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TacgegraphCar/PrefixHeader.pch";
 				INFOPLIST_FILE = TacgegraphCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -495,6 +608,7 @@
 		};
 		D693D5821F1DF53C006939FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C97508689EF60630DDB1983 /* Pods-TacgegraphCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -504,6 +618,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TacgegraphCar",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TacgegraphCar/PrefixHeader.pch";
 				INFOPLIST_FILE = TacgegraphCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

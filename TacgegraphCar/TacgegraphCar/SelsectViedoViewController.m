@@ -22,25 +22,25 @@
     // Do any additional setup after loading the view from its nib.
 }
     
-    - (void)viewDidAppear:(BOOL)animated{
-        [super viewDidAppear:animated];
-        self.navigationController.navigationBarHidden = NO;
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+
+- (void)qupaiSDK:(id <QupaiSDKDelegate>)sdk compeleteVideoPath:(NSString *)videoPath thumbnailPath:(NSString*)thumbnailPath{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    if (videoPath) {
+        UISaveVideoAtPathToSavedPhotosAlbum(videoPath, nil, nil, nil);
     }
-    
-    - (void)viewDidDisappear:(BOOL)animated{
-        [super viewDidDisappear:animated];
-        self.navigationController.navigationBarHidden = YES;
+    if (thumbnailPath) {
+        UIImageWriteToSavedPhotosAlbum([UIImage imageWithContentsOfFile:thumbnailPath], nil, nil, nil);
     }
-    
-    - (void)qupaiSDK:(id <QupaiSDKDelegate>)sdk compeleteVideoPath:(NSString *)videoPath thumbnailPath:(NSString*)thumbnailPath{
-        [self.navigationController popToRootViewControllerAnimated:YES];
-        if (videoPath) {
-            UISaveVideoAtPathToSavedPhotosAlbum(videoPath, nil, nil, nil);
-        }
-        if (thumbnailPath) {
-            UIImageWriteToSavedPhotosAlbum([UIImage imageWithContentsOfFile:thumbnailPath], nil, nil, nil);
-        }
-    }
+}
     
 - (NSArray *)qupaiSDKMusics:(id<QupaiSDKDelegate>)sdk
     {

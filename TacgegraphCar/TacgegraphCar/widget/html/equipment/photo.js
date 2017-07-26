@@ -210,6 +210,26 @@ function getSize(name, id) {
 }
 
 function uploadfile(name) {
+    
+//    $("#back").css.
+    
+    api.accessNative({
+                     name : 'showDetail',
+                     extra : {
+                     path:path_file+name,
+                     
+//                     name:name
+                     }
+                     }, function(ret, err) {
+                     if (ret) {
+                     } else {
+                     
+                     //                                    alert(JSON.stringify(err));
+                     }
+                     });
+    
+    
+    /*
 	fs.getAttribute({
 		path : path_file + name
 	}, function(ret, err) {
@@ -280,7 +300,7 @@ function uploadfile(name) {
 			});
 		}
 	});
-
+*/
 }
 
 function uploadfile2() {
